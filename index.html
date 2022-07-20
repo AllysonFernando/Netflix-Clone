@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Netflix-Clone/style/main.css" />
+    <title>CLONEFLIX</title>
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="logo">NETFLIX</div>
+      <button class="btn-mobile">Menu</button>
+      <nav class="navegacao">
+        <a href="#">Inicio</a>
+        <a href="#">Série</a>
+        <a href="#">Filmes</a>
+        <a href="#">Documentários</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="hero-container">
+          <div class="container-info">
+            <div class="container-logo">
+              <img src="/Netflix-Clone/img/logo.png" alt="" class="logoTW" />
+            </div>
+            <h3 class="titulo">The Witcher</h3>
+            <p class="sinopse">
+              O mutante Geralt de Rívia é um caçador de monstros que luta para
+              encontrar seu lugar num mundo onde as pessoas muitas vezes são
+              mais perversas que as criaturas selvagens.
+            </p>
+            <div class="botoes">
+              <button role="button" class="botao">
+                <i class="fas fa-play"></i>ASSISTA AGORA
+              </button>
+              <button role="button" class="botao">
+                <i class="fas fa-plus"></i>LISTA DE FAVORITOS
+              </button>
+            </div>
+          </div>
+          <div class="container-hero-image">
+            <div class="hero-imagem"></div>
+          </div>
+        </div>
+      </section>
+      <div class="assine">
+        <div class="container-assine">
+          <div class="assine-logo"></div>
+          <h3 class="assine-texto">Assista o quanto quiser.</h3>
+          <button class="botao-assinar">ASSINE A NETFLIX</button>
+        </div>
+      </div>
+      <section>
+        <div class="popular">
+          <h2 class="popular-texto">Mais Populares</h2>
+        </div>
+        <div class="carrossel-container">
+          <div class="carrossel"></div>
+          <a class="carrossel-botao-left" onclick="sliderScrollLeft()"
+            ><i class="fa fa-angle-left"></i
+          ></a>
+          <a class="carrossel-botao-right" onclick="sliderScrollRight()"
+            ><i class="fa fa-angle-right"></i
+          ></a>
+        </div>
+      </section>
+      <div class="container-divisoria">
+        <div class="divisoria"></div>
+      </div>
+      <section>
+        <div class="popular">
+          <h2 class="popular-texto">Original Netflix</h2>
+        </div>
+        <div class="carrossel-container">
+          <div class="carrossel-serie"></div>
+          <a class="carrossel-botao-left" onclick="sliderScrollLeft2()"
+            ><i class="fa fa-angle-left"></i
+          ></a>
+          <a class="carrossel-botao-right" onclick="sliderScrollRight2()"
+            ><i class="fa fa-angle-right"></i
+          ></a>
+        </div>
+      </section>
+      <div class="container-divisoria">
+        <div class="divisoria"></div>
+      </div>
+      <div class="rodape"></div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.25.0/axios.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e0836e1fca.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/Netflix-Clone/js/index.js"></script>
+  </body>
+</html>

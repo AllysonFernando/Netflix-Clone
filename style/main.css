@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+:root {
+  --vermelho: #e50914;
+  --preto: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  background: var(--preto);
+  font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.logo {
+  margin-left: 3%;
+  font-family: "Bebas Neue", cursive;
+  color: var(--vermelho);
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.btn-mobile {
+  display: none;
+}
+
+.navegacao {
+  display: flex;
+  margin-right: 3%;
+}
+
+.navegacao a {
+  text-decoration: none;
+  font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-left: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #505050;
+  display: block;
+  padding: 10px;
+}
+
+.navegacao :last-child {
+  margin-right: 0;
+}
+
+.navegacao a:hover {
+  color: #ffff;
+  transition: 0.2s ease all;
+}
+
+/* Principal */
+
+.hero-container {
+  position: relative;
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.container-hero-image {
+  display: flex;
+  padding-bottom: 60%;
+}
+
+.hero-imagem {
+  display: block;
+  position: absolute;
+  right: 0%;
+  max-width: 1280px;
+  width: 100%;
+  height: 90%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: linear-gradient(to right, black, transparent 80%),
+    linear-gradient(to bottom, black, transparent 10%),
+    linear-gradient(to top, black, transparent 10%),
+    linear-gradient(to left, black, transparent 10%),
+    url(/Netflix-Clone/img/capa.jpg);
+}
+
+.container-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 55%;
+  min-width: 500px;
+  max-width: 800px;
+  padding: 16px 32px 0px 50px;
+  z-index: 2;
+  position: relative;
+}
+
+.container-logo {
+  position: relative;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.logoTW {
+  width: 90%;
+  height: auto;
+  margin-bottom: 15%;
+}
+
+.titulo {
+  padding-bottom: 2%;
+  font-size: 26px;
+}
+
+.sinopse {
+  padding-bottom: 15%;
+  width: 90%;
+}
+
+.botao {
+  width: 230px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: white 1px solid;
+  color: white;
+  margin-bottom: 2%;
+
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  font-weight: bold;
+}
+
+.botao:hover {
+  border: #e50914 1px solid;
+}
+
+.botao i {
+  margin-right: 10px;
+}
+
+/* Assine Ja */
+.assine {
+  max-width: 1280px;
+  margin: auto;
+}
+.container-assine {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  max-width: 1280px;
+  margin: 40px 3%;
+  border: #767676 solid 2px;
+  padding: 10px;
+}
+
+.container-assine .assine-logo {
+  height: 50px;
+  width: 50px;
+  background-image: url(/Netflix-Clone/img/N-logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container-assine .assine-texto {
+  color: #ffffff;
+  font-size: 16px;
+  padding-left: 20px;
+  flex-grow: 1;
+}
+
+.container-assine .botao-assinar {
+  width: 180px;
+  background-color: var(--vermelho);
+  color: white;
+  padding: 15px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+.container-assine .botao-assinar:hover {
+  background-color: rgba(229, 9, 20, 0.5);
+  border: #e50914 solid 1px;
+}
+
+/* Carrossel Melhores Filmes */
+
+.popular {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: auto;
+}
+.popular-texto {
+  font-size: 20px;
+  margin-left: 3%;
+  margin-bottom: 10px;
+}
+
+.carrossel-container {
+  height: 250px;
+  max-width: 1280px;
+  position: relative;
+  margin: auto;
+}
+
+.carrossel-container .carrossel-botao-left,
+.carrossel-container .carrossel-botao-right {
+  color: white;
+  font-weight: bold;
+  height: 100%;
+  width: 45px;
+  line-height: 250px;
+  font-size: 25px;
+  text-align: center;
+  background-color: var(--vermelho);
+  top: 0;
+  z-index: 3;
+  border-radius: 2px;
+  cursor: pointer;
+  margin: 0 3%;
+}
+
+.carrossel-botao-right:hover,
+.carrossel-botao-left:hover {
+  background-color: rgba(229, 9, 20, 0.5);
+  border: #e50914 solid 1px;
+}
+
+.carrossel-container .carrossel-botao-left {
+  position: absolute;
+  left: 0px;
+}
+
+.carrossel-container .carrossel-botao-right {
+  position: absolute;
+  right: 0px;
+}
+
+.carrossel,
+.carrossel-serie {
+  height: 250px;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px !important;
+  display: flex;
+  align-items: center;
+  margin: 0 calc(50px + 3%);
+}
+
+.carrossel img,
+.carrossel-serie img {
+  min-width: 147px;
+  max-width: 147px;
+  height: 200px;
+  background-size: cover;
+  margin: 5px 11px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+}
+
+.carrossel img:hover,
+.carrossel-serie img:hover {
+  transform: scale(1.2);
+  z-index: 5;
+}
+
+/* Rodape */
+
+.rodape {
+  height: 100px;
+}
+
+.container-divisoria {
+  padding: 5px 0;
+  margin: auto;
+  max-width: 1280px;
+  width: 100%;
+}
+.divisoria {
+  border-bottom: #767676 1px solid;
+  margin: 3%;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 650px) {
+  .hero-container .container-info .sinopse {
+    width: 60%;
+  }
+  .container-logo {
+    margin: 0;
+  }
+  .carrossel-container .carrossel-botao-left,
+  .carrossel-container .carrossel-botao-right {
+    width: 20px;
+    padding: 0;
+  }
+
+  .navegacao {
+    display: none;
+  }
+
+  .btn-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-assine .assine-texto,
+  .container-assine .assine-logo {
+    display: none;
+  }
+  .container-assine .botao-assinar {
+    flex: 1;
+  }
+  .container-assine {
+    border: none;
+  }
+}
